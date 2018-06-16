@@ -1,0 +1,11 @@
+<h2>Edit <%= @word.English %></h2>
+
+<%= form_for(@word) do |word| %>
+  <%= word.label :English, 'English' %>
+  <%= word.text_field :English %>
+
+  <%= word.label :Japanese, 'Japanese' %>
+  <%= word.text_field :Japanese %>
+
+  <%= word.submit 'Edit' %>
+<% end %>

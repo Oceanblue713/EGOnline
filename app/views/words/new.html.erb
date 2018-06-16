@@ -1,0 +1,12 @@
+<h2>New.words</h2>
+
+<%= form_for(@word) do |w| %>
+  <%= w.label :English, 'English' %>
+  <%= w.text_field :English %><br >
+  <%= w.label :Japanese, '日本語' %>
+  <%= w.text_field :Japanese %>
+
+  <%= w.submit 'Submit' %>
+<% end %>
+
+<%= link_to "Index.html", words_path %>

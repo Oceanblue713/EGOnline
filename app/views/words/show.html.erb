@@ -1,0 +1,5 @@
+<h2><%= @word.English %></h2>
+<h3><%= @word.Japanese %></h3>
+
+<%= link_to "Index.html", words_path %>
+<%= link_to "Delete", @word, method: :delete, data: { confirm:"Are you sure?"} %>

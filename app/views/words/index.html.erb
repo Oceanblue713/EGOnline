@@ -1,0 +1,10 @@
+<h1>Word.index</h1>
+
+<tb>
+  <% @words.each do |word| %>
+    <td><%= link_to word.id, word_path(word) %></td>
+    <td><%= word.English %></td>
+    <td><%= word.Japanese %></td><br>
+  <% end %>
+
+</tb>
