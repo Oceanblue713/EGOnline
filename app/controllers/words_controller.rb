@@ -1,6 +1,7 @@
 class WordsController < ApplicationController
   def index
     @words = Word.all
+    #@categories = @words.category_id
   end
 
   def show
@@ -50,6 +51,6 @@ class WordsController < ApplicationController
   private
 
   def word_params
-    params.require(:word).permit(:English,:Japanese)
+    params.require(:word).permit(:English,:Japanese,:category)
   end
 end

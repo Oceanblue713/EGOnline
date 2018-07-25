@@ -1,0 +1,12 @@
+<h2>Category.index</h2>
+
+<tb>
+  <% @categories.each do |c| %>
+    <tr><%= c.id %></tr>
+    <tr><%= c.category %></tr><br>
+  <% end %>
+</tb>
+
+<br>
+<%= link_to 'Words.Index', words_path %><br>
+<%= link_to 'New Category', new_category_path %>

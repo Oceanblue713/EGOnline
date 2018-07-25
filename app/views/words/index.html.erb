@@ -1,4 +1,5 @@
-<h1>Word.index</h1>
+
+<h1 onclick="this.style.backgroundColor='#990000'">Word.index</h1>
 
 <tb>
   <% @words.each do |word| %>
@@ -6,5 +7,6 @@
     <td><%= word.English %></td>
     <td><%= word.Japanese %></td><br>
   <% end %>
-
 </tb>
+<%= link_to 'Create new word', new_word_path %><br>
+<%= link_to 'Go To Category', categories_path%>

@@ -1,0 +1,12 @@
+<h2>New.category</h2>
+
+<%= form_for(@category, url: categories_path) do |c| %>
+  <%= c.label :category, 'category' %>
+  <%= c.text_field :category %><br >
+  <%= c.label :word_id, 'word_id' %>
+  <%= c.text_field :word_id %><br>
+
+  <%= c.submit 'Submit' %>
+<% end %>
+
+<%= link_to 'Index.category', categories_path %>
